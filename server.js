@@ -1,7 +1,6 @@
 const express = require("express"),
   Mongoose = require("mongoose"),
   app = express(),
-  PORT = 3000,
   UserSchema = require("./model/user.model");
 
 // connect database
@@ -96,4 +95,4 @@ app.get("/", (req, res, next) => {
     `);
 });
 
-app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
+app.listen(process.env.PORT || 3000, () => console.log(`server started...`));
