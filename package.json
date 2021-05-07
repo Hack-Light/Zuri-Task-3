@@ -1,0 +1,15 @@
+{
+  "name": "task-3",
+  "version": "1.0.0",
+  "description": "Database task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Onoh Somtochukwu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  }
+}
