@@ -1,7 +1,7 @@
 const express = require("express"),
   Mongoose = require("mongoose"),
   app = express(),
-  PORT = "3000",
+  PORT = 3000,
   UserSchema = require("./model/user.model");
 
 // connect database
