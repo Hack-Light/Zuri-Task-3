@@ -4,14 +4,9 @@ const express = require("express"),
   PORT = "3000",
   UserSchema = require("./model/user.model");
 
-// const uri =
-//   "mongodb+srv://user:!Somvalex@cluster0.bghcn.mongodb.net/zuri3?retryWrites=true&w=majority";
-
-const uri = "mongodb://localhost:27017/zuri3";
-
 // connect database
 Mongoose.connect(
-  uri,
+  process.env.URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
