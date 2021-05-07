@@ -80,7 +80,7 @@ app.delete("/:id", async (req, res, next) => {
 });
 
 // Get all users
-app.get("/", async (req, res, next) => {
+app.get("/all", async (req, res, next) => {
   try {
     let data = await UserSchema.find({});
 
@@ -88,6 +88,12 @@ app.get("/", async (req, res, next) => {
   } catch (err) {
     res.send({ message: err.message });
   }
+});
+
+app.get("/", (req, res, next) => {
+  res.send(`
+    <h1>Hello from Onoh Somtochukwu</h1>
+    `);
 });
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
